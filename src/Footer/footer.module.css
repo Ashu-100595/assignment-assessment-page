@@ -1,0 +1,23 @@
+h3{
+    color: #8B90A2;
+    font-size:13px;
+    font-weight: 700; 
+}
+
+p{
+    color: #ffffff;
+    font-size: 10px;
+}
+
+.footerWrapper{
+    width: 100%;
+    background-color: #172146;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.sectionWrapper{
+    text-align: left;
+    margin-bottom: 70px;
+}
