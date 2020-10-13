@@ -1,0 +1,43 @@
+.courseCard{
+    width: calc(25% - 24px);
+    padding: 10px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 12px;
+  }
+  .cardSection{
+    background: #FFFFFF;
+    padding: 10px 10px;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 0 2px 1px #0096ff;
+    color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    height: 90px;
+  }
+  .cardLeftPart{
+    width: 50%;
+    padding-left: 20px;
+  }
+  .cardLeftPart>img{
+    width: 65px;
+    height: 65px;
+  }
+  .cardRightPart{
+    width: 50%;
+  }
+  .cardRightPart>h3{
+    font-weight: bold;
+    font-size: 24px;
+    margin: 0;
+    letter-spacing: 1px;
+  }
+  .cardRightPart>p{
+    font-style: italic;
+    margin-top: 15px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    color: rgba(0,0,0,0.6);
+    margin-bottom: 0px;
+  }
