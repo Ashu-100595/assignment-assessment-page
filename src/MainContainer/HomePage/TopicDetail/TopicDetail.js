@@ -3,7 +3,7 @@ import './TopicDetail.css';
 
 const TopicDetail = () => {
     return(
-        <div className='homePage detailPage'>
+        <div className='homePage'>
             <div className='logoSection'>
                 <img src='https://assessments.edyoda.com/uploads/static/images/PYTHON/python_1_OJ7Al4d.png' alt='skilllogo'/>
                 <div>
