@@ -1,0 +1,24 @@
+.homePage{
+    font-family: 'Raleway', sans-serif;
+    margin: 0 auto;
+    width: 1200px;
+    font-size: 16px;
+}
+  .homeHeading{
+    font-size: 40px;
+    color: rgba(0,0,0,0.8);
+    letter-spacing: 1px;
+    margin-bottom: 0px;
+    margin-left: 18px;
+  }
+  .homeSubHeading{
+    font-family: Roboto,sans-serif;
+    color: rgba(0,0,0,0.6);
+    letter-spacing: 1px;
+    margin-left: 18px;
+  }
+  .courseWrapper{
+    display: flex;
+    flex-wrap: wrap;
+  }
+ 
