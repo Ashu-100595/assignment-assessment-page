@@ -1,17 +1,16 @@
 import React from 'react';
 import './App.css';
 import Navbar from './Components/Navbar/Navbar'
-import Homepage from './MainContainer/HomePage/Homepage';
-import TopicDetail from './MainContainer/HomePage/TopicDetail/TopicDetail';
-
-import Footer from './Footer/footer'
+import Problems from './Components/Problems/problems'
+import Footer from './Components/Footer/footer'
+import TopicDetail from './Components/TopicDetail/TopicDetail'
 
 function App() {
   return (
     <div className="App">
 
        <Navbar />
-       <TopicDetail/>
+       <Problems/>
       <Footer/>
 
     </div>

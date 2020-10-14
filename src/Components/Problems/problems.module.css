@@ -1,0 +1,81 @@
+.probPage{
+    margin-top: 120px;
+}
+
+.Heading{
+    text-align:center;
+  }
+  
+  .subHeading{
+   text-align: center;
+   font-size: 15px;
+   font-weight: 700;
+  }
+  
+  .longCard{
+      border:2px solid slategrey;
+      border-radius: 5px;
+      display:flex;
+      width: 60%; 
+      margin-left: auto;
+      margin-right: auto;
+      justify-content: space-between;
+      margin-bottom: 20px;
+      padding:5px 0;
+  }
+  
+  .longCard:hover{
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      background-color: #a0c0de;
+      
+  }
+  
+  .Prob{
+      padding-right:10px;
+  }
+  
+  .probsWrapper{
+      margin-left:20px;
+      padding-right: 15px;
+      border-right: 2px solid black;
+      height: 60px;   
+  }
+  
+  .Desc{
+      text-align: left;
+  }
+  
+  .Upperdesc{
+      font-size: 15px;
+      margin-top: -3px;
+  }
+  
+  .Middesc{
+    font-size:10px;
+    margin-top:-12px
+  }
+  
+  
+  .Lowerdesc{
+    font-size:10px;
+    margin-top:-5px
+  }
+  
+  .subBtn{
+    border: 2px solid black;
+    padding:5px 10px;
+    border-radius: 5px;
+    margin-top: 6px;
+    margin-bottom: -5px;
+  }
+  
+  .subbtnWrapper{
+      margin-right: 20px;
+      margin-top: 5px;
+  }
+  
+  .subBtn:hover{
+      border: 2px solid white;
+      background-color:#0096ff;
+      color: white;
+  }
