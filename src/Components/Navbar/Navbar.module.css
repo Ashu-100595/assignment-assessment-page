@@ -1,8 +1,9 @@
 .Navbar{
-    box-shadow: 0 5px 5px #ccc;
+    box-shadow: 0 1px 1px #ccc;
     height: 65px;
     display: flex;
     align-items: center;
+    background-color: #fff;
 }
 
 .NavbarWrapper{
@@ -25,6 +26,10 @@
 
 .MenuItems{
     margin: 0 25px;
+    text-decoration: none;
+    color: #000;
+    font-weight: 400;
+    text-transform: uppercase;
 }
 
 .AccountSection{
@@ -49,17 +54,14 @@
 .CountWrapper{
     width: 15px;
     height: 20px;
-    background-color: red;
+    background-color: #dc3545;
     position: absolute;
     top:-10px;
     right: -10px;
     border-radius: 10px;
+    text-align: center;
 }
 
 .NotificationCount{
-    text-align: center;
     color: #fff;
-    position: absolute;
-    top:-20px;
-    right: 5px;
 }
