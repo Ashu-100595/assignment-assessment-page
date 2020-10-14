@@ -6,10 +6,10 @@ import Classroom from './Container/Classroom/Classroom';
 import NotFoundPage from './Container/NotFoundPage/NotFoundPage';
 import Homepage from './Container/HomePage/Homepage';
 import TopicDetail from './Components/TopicDetail/TopicDetail';
+import Footer from './Components/Footer/footer';
 
 import './App.css';
 
-import Footer from './Components/Footer/footer';
 
 function App() {
   return (
