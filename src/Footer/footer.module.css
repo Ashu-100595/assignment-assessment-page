@@ -1,10 +1,10 @@
-h3{
+.sectionWrapper h3{
     color: #8B90A2;
     font-size:13px;
     font-weight: 700; 
 }
 
-p{
+.sectionWrapper p{
     color: #ffffff;
     font-size: 10px;
 }
