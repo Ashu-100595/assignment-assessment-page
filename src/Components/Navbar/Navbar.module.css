@@ -3,6 +3,10 @@
     height: 65px;
     display: flex;
     align-items: center;
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 
 .NavbarWrapper{
@@ -21,10 +25,12 @@
 
 .Logo{
     width: 200px;
+    cursor: pointer;
 }
 
 .MenuItems{
     margin: 0 25px;
+    cursor: pointer;
 }
 
 .AccountSection{
@@ -47,19 +53,22 @@
 }
 
 .CountWrapper{
-    width: 15px;
+    width: 20px;
     height: 20px;
     background-color: red;
     position: absolute;
-    top:-10px;
-    right: -10px;
+    top:-12px;
+    right: -11px;
     border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .NotificationCount{
     text-align: center;
     color: #fff;
-    position: absolute;
-    top:-20px;
-    right: 5px;
+}
+.Username{
+    cursor: pointer;
 }

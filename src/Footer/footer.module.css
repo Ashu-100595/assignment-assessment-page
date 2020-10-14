@@ -1,12 +1,13 @@
-h3{
+.sectionWrapper>h3{
     color: #8B90A2;
-    font-size:13px;
+    font-size:19px;
     font-weight: 700; 
 }
 
-p{
+.sectionWrapper>p{
     color: #ffffff;
-    font-size: 10px;
+    font-size: 14px;
+    cursor: pointer;
 }
 
 .footerWrapper{
@@ -14,10 +15,12 @@ p{
     background-color: #172146;
     display: flex;
     justify-content: space-evenly;
-
+    padding: 50px 0px;
+    margin-top: 50px;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
 }
 
 .sectionWrapper{
     text-align: left;
-    margin-bottom: 70px;
 }
