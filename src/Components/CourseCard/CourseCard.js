@@ -1,8 +1,10 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 import classes from './CourseCard.module.css';
 
 const CourseCard = (props) => {
     return (
+        <Link to="/modules">
         <div className={classes.CourseCard}>
             <div className={classes.Thumbnail}>
                 <img src={props.ThumbnailUrl} alt="Course Thumbnail"/>
@@ -17,6 +19,7 @@ const CourseCard = (props) => {
                                     
             </div>
         </div>
+        </Link>
     )
 }
 

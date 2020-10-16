@@ -8,7 +8,7 @@ const Classroom = () => {
     return(
         <div className={classes.MainContainer}>
             <p className={classes.Heading}>Classroom</p>
-            <p className={classes.SubHeading}>Your Enrolled Course</p>
+            <p className={classes.SubHeading}>Your Enrolled Courses</p>
             <div className={classes.CoursesSection}>
                 <CourseCard 
                 ThumbnailUrl={"https://assessments.edyoda.com/uploads/static/images/RB020420/edyoda_programs.png"}  
