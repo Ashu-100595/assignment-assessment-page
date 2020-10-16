@@ -7,6 +7,7 @@
     position: fixed;
     top: 0;
     width: 100%;
+    z-index: 1000;
 }
 
 .NavbarWrapper{
@@ -32,7 +33,9 @@
     margin: 0 25px;
     cursor: pointer;
 }
-
+.MenuItems:hover{
+    color: teal;
+}
 .AccountSection{
     display: flex;
     align-items: center;
@@ -46,6 +49,10 @@
 
 .Bell{
     font-size: 20px;
+}
+.Bell:hover{
+    color:teal;
+    cursor: pointer;
 }
 
 .Dropdown{
@@ -71,4 +78,7 @@
 }
 .Username{
     cursor: pointer;
+}
+.Username:hover{
+    color: teal;
 }
