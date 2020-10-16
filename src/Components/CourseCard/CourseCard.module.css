@@ -10,8 +10,11 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    transition: transform .7s;
 }
-
+.CourseCard:hover{
+    transform: scale(1.1);
+}
 .Thumbnail>img{
     width: 100%;
 }

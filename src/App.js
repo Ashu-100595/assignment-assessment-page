@@ -7,9 +7,9 @@ import ModulesPage from './Container/ModulesPage/ModulesPage';
 import NotFoundPage from './Container/NotFoundPage/NotFoundPage';
 import Homepage from './Container/HomePage/Homepage';
 import TopicDetail from './Container/TopicDetail/TopicDetail';
-import Problems from './Components/Problems/problems'
+import Problems from './Components/Problems/problems';
+import Content from './Container/Contentpage/contentpage';
 import Footer from './Components/Footer/footer';
-
 
 import './App.css';
 
@@ -25,6 +25,7 @@ function App() {
         <Route path="/dashboard/python/1" component={Problems} />
         <Route path="/classroom" component={Classroom} />
         <Route path="/modules" component={ModulesPage} />
+        <Route path="/weekly-curriculum" component={Content} />
         <Route component={NotFoundPage} />
         </Switch>
         <Footer />

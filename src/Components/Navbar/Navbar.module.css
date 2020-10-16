@@ -7,11 +7,7 @@
     position: fixed;
     top: 0;
     width: 100%;
-<<<<<<< HEAD
     z-index: 1000;
-=======
-    z-index: 10;
->>>>>>> 9f141e68f4da516ebd1b848e80526f19334e78cd
 }
 
 .NavbarWrapper{
@@ -79,13 +75,10 @@
 
 .NotificationCount{
     color: #fff;
-<<<<<<< HEAD
 }
 .Username{
     cursor: pointer;
 }
 .Username:hover{
     color: teal;
-=======
->>>>>>> 9f141e68f4da516ebd1b848e80526f19334e78cd
 }
