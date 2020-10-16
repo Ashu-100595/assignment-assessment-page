@@ -1,12 +1,12 @@
 import React from 'react';
-// import {Link} from 'react-router-dom';
+import {Link} from 'react-router-dom';
 
 import classes from './ModuleCard.module.css';
 
 const ModuleCard= () => {
     return(
-        
-        <div className={classes.CardWrapper}>
+        <Link className={classes.CardWrapper} to="/weekly-curriculum">         
+        <div>
             <div className={classes.ModuleThumnail}>
                 <img src="https://assessments.edyoda.com/uploads/static/images/module_icon/aws_4QRD91l.png" alt="module thumbnail" />
             </div>
@@ -17,6 +17,7 @@ const ModuleCard= () => {
             </div>
             <div>1 Weeks</div>
         </div>
+        </Link>
     )
 }
 
