@@ -1,5 +1,5 @@
 .Navbar{
-    box-shadow: 0 5px 5px #ccc;
+    box-shadow: 0 1px 1px #ccc;
     height: 65px;
     display: flex;
     align-items: center;
@@ -7,7 +7,11 @@
     position: fixed;
     top: 0;
     width: 100%;
+<<<<<<< HEAD
     z-index: 1000;
+=======
+    z-index: 10;
+>>>>>>> 9f141e68f4da516ebd1b848e80526f19334e78cd
 }
 
 .NavbarWrapper{
@@ -31,7 +35,10 @@
 
 .MenuItems{
     margin: 0 25px;
-    cursor: pointer;
+    text-decoration: none;
+    color: #000;
+    font-weight: 400;
+    text-transform: uppercase;
 }
 .MenuItems:hover{
     color: teal;
@@ -62,23 +69,23 @@
 .CountWrapper{
     width: 20px;
     height: 20px;
-    background-color: red;
+    background-color: #dc3545;
     position: absolute;
     top:-12px;
     right: -11px;
     border-radius: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    text-align: center;
 }
 
 .NotificationCount{
-    text-align: center;
     color: #fff;
+<<<<<<< HEAD
 }
 .Username{
     cursor: pointer;
 }
 .Username:hover{
     color: teal;
+=======
+>>>>>>> 9f141e68f4da516ebd1b848e80526f19334e78cd
 }

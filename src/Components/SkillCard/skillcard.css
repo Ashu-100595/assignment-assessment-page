@@ -5,6 +5,11 @@
     cursor: pointer;
     margin: 12px;
   }
+
+  .courseCard>a{
+    text-decoration: none;
+  }
+  
   .cardSection{
     background: #FFFFFF;
     padding: 10px 10px;
