@@ -4,8 +4,11 @@
     box-sizing: border-box;
     cursor: pointer;
     margin: 12px;
+    transition: transform .5s;
   }
-
+.courseCard:hover{
+    transform: scale(1.1);
+}
   .courseCard>a{
     text-decoration: none;
   }
