@@ -21,7 +21,7 @@ function App() {
         <Navbar />
         <Switch>
         <Route exact path="/" component={Homepage} />
-        <Route exact path="/dashboard/python" component={TopicDetail} />
+        <Route exact path="/dashboard/:course" component={TopicDetail} />
         <Route path="/dashboard/python/1" component={Problems} />
         <Route path="/classroom" component={Classroom} />
         <Route path="/modules" component={ModulesPage} />
