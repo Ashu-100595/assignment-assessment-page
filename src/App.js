@@ -1,6 +1,6 @@
 import React from 'react';
 import { Route,  BrowserRouter, Switch,} from 'react-router-dom';
-
+import axios from 'axios';
 import Navbar from './Components/Navbar/Navbar';
 import Classroom from './Container/Classroom/Classroom';
 import ModulesPage from './Container/ModulesPage/ModulesPage';
@@ -14,14 +14,34 @@ import Footer from './Components/Footer/footer';
 import './App.css';
 
 
-function App() {
-  return (
+class App extends React.Component{
+
+  state = {
+      data: []
+  }
+
+ componentDidMount(){
+   axios.get('https://5f87684649ccbb00161774c5.mockapi.io/PracticeArena')
+   .then(response => {
+     
+      this.setState({data:{...response.data}})
+      //console.log(this.state.data[0].Python.Topics[0].Date);
+      console.log(this.state.data);   
+     
+   })
+   .catch(err =>{
+     console.log('Data fetching failed !!');
+   })
+ }
+
+  render(){ 
+  return(
     <BrowserRouter>
       <div className="App">
         <Navbar />
         <Switch>
         <Route exact path="/" component={Homepage} />
-        <Route exact path="/dashboard/:course" component={TopicDetail} />
+        <Route exact path="/dashboard/:CourseName" component={TopicDetail} />
         <Route path="/dashboard/python/1" component={Problems} />
         <Route path="/classroom" component={Classroom} />
         <Route path="/modules" component={ModulesPage} />
@@ -33,6 +53,7 @@ function App() {
     </BrowserRouter>
     
   );
+  }
 }
 
 export default App;

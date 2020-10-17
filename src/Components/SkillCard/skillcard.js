@@ -6,14 +6,14 @@ const Skillcard = (props) => {
     return(
     
     <div className='courseCard'>
-        <Link to={`./dashboard/${props.name}`}>
+        <Link to={`/dashboard/${props.course}`}>
         <div className='cardSection'>
             <div className='cardLeftPart'>
-              <img src={props.img} alt='skillLogo'/>
+              <img src={props.image} alt='skilllogo'/>
             </div>
             <div className='cardRightPart'> 
-               <h3>{props.name}</h3>
-               <p>{props.units} units</p>
+               <h3>{props.course}</h3>
+               <p>{props.unit} units</p>
             </div>
         </div>
         </Link>
