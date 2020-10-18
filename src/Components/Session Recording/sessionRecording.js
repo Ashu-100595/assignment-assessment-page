@@ -10,4 +10,4 @@ const SessionRecording= () => {
   )
 }
 
-export default SessionRecording
+export default SessionRecording;

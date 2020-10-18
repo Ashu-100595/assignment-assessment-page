@@ -2,13 +2,12 @@ import React from 'react';
 import axios from 'axios';
 
 import ModuleCard from '../../Components/ModuleCard/ModuleCard';
-
 import classes from './ModulesPage.module.css';
 
 class ModulesPage extends React.Component {
 
     state={
-        classData : [],
+       classData : [],
     }
 
     componentDidMount(){
@@ -23,6 +22,7 @@ class ModulesPage extends React.Component {
     }
     render(){
         return (
+
         <div className={classes.MainContainer}>
             <main className={classes.PageContainer}>
                 <section className={classes.ImageSection}>
@@ -85,12 +85,14 @@ class ModulesPage extends React.Component {
                                return <ModuleCard key={item.id} thumbnail={item.Thumbnail} CardHeading={item.Title} ModuleFaculty={item.Instructor} avatar={item.Avatar} Duration={item.Duration} />
                             })
                         }                        
+
                     </div>
                 </section>
             </main>
         </div>
     )
+  }
 }
-}
+
 
 export default ModulesPage;

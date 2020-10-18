@@ -15,9 +15,9 @@ class TopicDetail extends React.Component {
     componentDidMount(){
         Axios.get('https://5f87684649ccbb00161774c5.mockapi.io/PracticeArena')
         .then(async(response)=>{
-            console.log(response)
+           // console.log(response)
         let Topics = response.data.map(item=>{
-            console.log(item)
+            //console.log(item)
             if( item.CourseName==this.props.match.params.CourseName){
             return item
         }}
@@ -25,7 +25,7 @@ class TopicDetail extends React.Component {
             );
             Topics=await Promise.all(Topics)
             Topics=Topics.filter(x => !!x)
-            console.log(Topics)
+            //console.log(Topics)
             this.setState({topic:Topics[0].Topics})
             this.setState({logo:Topics[0].Logo})
             
@@ -39,8 +39,8 @@ class TopicDetail extends React.Component {
 
     render(){
         const {topic,logo} = this.state
-      console.log(topic)
-      console.log(logo)
+      //console.log(topic)
+      //console.log(logo)
         return(
         <div className='homePage'>
             <div className='logoSection'>
