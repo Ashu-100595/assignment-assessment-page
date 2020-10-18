@@ -1,11 +1,28 @@
 import React from 'react';
+import axios from 'axios';
 
 import ModuleCard from '../../Components/ModuleCard/ModuleCard';
 
 import classes from './ModulesPage.module.css';
 
-const ModulesPage = () => {
-    return (
+class ModulesPage extends React.Component {
+
+    state={
+        classData : [],
+    }
+
+    componentDidMount(){
+        axios.get("https://5efbca1c80d8170016f76869.mockapi.io/shoplaneOrder")
+        .then(response =>{
+            this.setState({classData:[...response.data]});
+            console.log(this.state.classData)
+        })
+        .catch(err=>{
+            console.log("API call failed")
+        })
+    }
+    render(){
+        return (
         <div className={classes.MainContainer}>
             <main className={classes.PageContainer}>
                 <section className={classes.ImageSection}>
@@ -63,12 +80,17 @@ const ModulesPage = () => {
                 </section>
                 <section>
                     <div className={classes.ModuleCardWrapper}>
-                        <ModuleCard />
+                        {
+                            this.state.classData.map(item =>{
+                               return <ModuleCard key={item.id} thumbnail={item.Thumbnail} CardHeading={item.Title} ModuleFaculty={item.Instructor} avatar={item.Avatar} Duration={item.Duration} />
+                            })
+                        }                        
                     </div>
                 </section>
             </main>
         </div>
     )
+}
 }
 
 export default ModulesPage;
