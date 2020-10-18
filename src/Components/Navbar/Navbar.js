@@ -12,7 +12,6 @@ const Navbar = () => {
                     <div className={classes.NavSection}>
                         <Link to="/" className={classes.MenuItems}>Practice Arena</Link>
                         <Link to="/classroom" className={classes.MenuItems}>Classroom</Link>
-                        <Link to="/jobs" className={classes.MenuItems}>View Jobs</Link>
                     </div>
                 </div>
                 <div className={classes.AccountSection}>

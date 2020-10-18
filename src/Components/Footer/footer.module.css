@@ -6,7 +6,7 @@
     font-weight: 700; 
 }
 
-.sectionWrapper>p{
+.sectionWrapper{
     color: #ffffff;
     font-size: 14px;
     cursor: pointer;
@@ -25,4 +25,20 @@
 
 .sectionWrapper{
     text-align: left;
+}
+
+.sectionWrapper img, .sectionWrapper span{
+    margin:5px;
+    vertical-align: middle;
+}
+
+.SocialMedia{
+    display: flex;
+    margin-top: 10px;
+}
+
+.SocialMedia img{
+    width: 15px;
+    height: 20px;
+    margin: 10px;
 }
