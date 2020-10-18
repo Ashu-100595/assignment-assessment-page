@@ -1,9 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Monda&display=swap');
+
+
 .probPage{
     margin-top: 120px;
+    font-family: 'Monda', sans-serif;
 }
 
 .Heading{
     text-align:center;
+    margin-bottom: 50px;
   }
   
   .subHeading{
@@ -25,7 +30,7 @@
   }
   
   .longCard:hover{
-      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      box-shadow: 0px 5px 9px gray;
       background-color: #a0c0de;
       
   }
@@ -34,6 +39,10 @@
       padding-right:10px;
   }
   
+  .probsWrapper>p{
+      font-weight: 600;
+  }
+
   .probsWrapper{
       margin-left:20px;
       padding-right: 15px;
@@ -42,12 +51,13 @@
   }
   
   .Desc{
-      text-align: left;
+      text-align: center;
   }
   
   .Upperdesc{
       font-size: 15px;
       margin-top: -3px;
+      font-weight: 500;
   }
   
   .Middesc{
@@ -78,4 +88,5 @@
       border: 2px solid white;
       background-color:#0096ff;
       color: white;
+      cursor: pointer;
   }
