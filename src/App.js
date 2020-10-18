@@ -51,7 +51,9 @@ class App extends React.Component{
         <Route exact path="/modules/RB-020420" component={ModulesPage} />
         <Route exact path="/modules/RB-020420/grades" component={Grades} />
         <Route path="/modules/DSA-130720" component={Dsa} />
-        <Route path="/weekly-curriculum" component={Content} />
+        <Route path="/weekly-curriculum/:CardHeading" component={Content} />
+        <Route exact path="/session-plan" component={SessionPlan}/>
+        <Route exact path="/session-recording" component={SessionRecording}/>
         <Route component={NotFoundPage} />
         </Switch>
         <Footer />

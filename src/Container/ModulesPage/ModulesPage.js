@@ -2,7 +2,6 @@ import React from 'react';
 import axios from 'axios';
 
 import ModuleCard from '../../Components/ModuleCard/ModuleCard';
-import axios from 'axios';
 import classes from './ModulesPage.module.css';
 
 class ModulesPage extends React.Component {
@@ -94,6 +93,6 @@ class ModulesPage extends React.Component {
     )
   }
 }
-}
+
 
 export default ModulesPage;
