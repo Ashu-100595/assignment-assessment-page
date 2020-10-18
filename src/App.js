@@ -49,7 +49,7 @@ class App extends React.Component{
         <Route path="/dashboard/:CourseName/:id" component={Problems} />
         <Route path="/classroom" component={Classroom} />
         <Route exact path="/modules/RB-020420" component={ModulesPage} />
-        <Route exact path="/modules/RB-020420/grades" component={Grades} />
+        <Route exact path="/modules/RB-020420/grades/:CourseName" component={Grades} />
         <Route path="/modules/DSA-130720" component={Dsa} />
         <Route path="/weekly-curriculum/:CardHeading" component={Content} />
         <Route exact path="/session-plan" component={SessionPlan}/>

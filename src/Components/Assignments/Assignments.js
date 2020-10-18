@@ -9,8 +9,7 @@ const Assignments = (props) => {
             <div>{`${props.id})`}</div>
             <div>{props.title}</div>
             </div>                        
-            {/* {props.score =="Pending"} ? <div className={classes.Error}>{props.score}</div> :  */}
-            <div>{props.score}</div>
+            <div className={classes.Error}>{props.score}</div>
         </div>
     )
 }

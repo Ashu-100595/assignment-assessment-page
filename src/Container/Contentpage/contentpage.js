@@ -16,11 +16,13 @@ class Content extends React.Component{
           block2: false,
           block3: false,
           week:[],
+          moduleName:[]
         };
     
 
     componentDidMount(){
       const params= this.props.match.params.CardHeading;
+
       console.log(params);
       axios.get('https://5f87684649ccbb00161774c5.mockapi.io/WeeklyData')
       .then(response =>{
@@ -37,7 +39,8 @@ class Content extends React.Component{
                               cardData: item.Thumbnail,
                               grades: [item.Units.Grades],
                               last: [item.Units.LastWeekAttendance],
-                              total: [item.Units.TotalAttendance]
+                              total: [item.Units.TotalAttendance],
+                              moduleName: [params]
                              });
             //console.log(this.state.week[0].WeeklyPlan[0].weekplan);
             //  console.l og()
@@ -71,7 +74,7 @@ class Content extends React.Component{
         <div className='homePage contentpage'>
             <div className='contentBtn'>
                 <button type='button'>Units</button>
-                <Link to={`/modules/RB-020420/grades/`}>
+                <Link to={`/modules/RB-020420/grades/${this.state.moduleName[0]}`}>
                   <button type='button'>Grades</button>
                 </Link>
             </div>

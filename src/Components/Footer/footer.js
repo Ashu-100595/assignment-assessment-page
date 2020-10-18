@@ -34,9 +34,21 @@ function Footer(){
                        Incubes Building Next to McDonalds,<br></br>
                        ITPL Main Rd, Brookefield,Bengaluru,<br></br>
                        Karnataka-560037, India
+                    </p>                    
+                    <img src="https://assessments.edyoda.com/static/images/Email.svg" alt="email thumnail" />
+                    <span>hello@edyoda.com</span><br />
+                    <img src="https://assessments.edyoda.com/static/images/Call.svg" alt="call thumbnail" />
+                    <span>+91 8971554184</span>
+                    <div className={classes.SocialMedia}>
+                        <img src="https://assessments.edyoda.com/static/images/landmark.png" alt="location" />
+                        <img src="https://assessments.edyoda.com/static/images/twitter.svg" alt="twitter" />
+                        <img src="https://assessments.edyoda.com/static/images/fbimage.png" alt="facebook" />
+                        <img src="https://assessments.edyoda.com/static/images/linkden.png" alt="Linkedin" />
+                    </div>
+                    <p>© 2020 <br />
+                    zekeLabs Technologies Private Limited
                     </p>
-                    <p>hello@edyoda.com</p>
-                    <p>+91 8971554184</p>
+
                 </div>
             </div>
         </footer>    

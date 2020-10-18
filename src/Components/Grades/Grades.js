@@ -15,7 +15,18 @@ class Grades extends React.Component {
 
         axios.get("https://5f8c0fd0c7aadb001605dfac.mockapi.io/myApi")
         .then(async(response) =>{
-            this.setState({assignmentData:[...response.data[2].Assignments]});
+            let currentModule = response.data.map(item=>{
+                console.log(item)
+                if( item.module==this.props.match.params.CourseName){
+                    console.log(item)
+                return item
+
+            }}
+            );
+            currentModule=await Promise.all(currentModule)
+            currentModule=currentModule.filter(x => !!x)
+            console.log(currentModule)
+            this.setState({assignmentData:[...currentModule[0].Assignments]});
             console.log(this.state.assignmentData)
 
         })
@@ -33,7 +44,7 @@ class Grades extends React.Component {
                             <img src="https://assessments.edyoda.com/uploads/static/images/logo.png" alt="Thumbnail" />
                         </div>
                         <div className={classes.ScoreSection}>
-                            <div className={classes.CourseName}>CSS | Javascript</div>
+                            <div className={classes.CourseName}>{this.props.match.params.CourseName}</div>
                             <div className={classes.Scores}>
                             <div className={classes.Rank}>
                                 <div>18</div>
