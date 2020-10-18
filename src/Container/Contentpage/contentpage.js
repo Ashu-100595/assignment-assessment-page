@@ -20,23 +20,30 @@ class Content extends React.Component{
     
 
     componentDidMount(){
-      const params= this.props.match.params.Coursetitle;
+      const params= this.props.match.params.CardHeading;
       console.log(params);
-      axios.get('https://5ee248e08b27f300160948a4.mockapi.io/video/week')
+      axios.get('https://5f87684649ccbb00161774c5.mockapi.io/WeeklyData')
       .then(response =>{
            const resp= response.data[0].details.Modules;
-           console.log(resp)
-          for(var i =0; i<resp.length; i++){
-            if(params === resp[i].Title){
-              this.setState({week: [resp[i].Units[0].ModulePlan]})
-              this.setState({cardData: resp[i].Thumbnail})
-              this.setState({grades: [resp[i].Units[0].Grades]})
-              this.setState({last: [resp[i].Units[0].LastWeekAttendance]})
-              this.setState({total: [resp[i].Units[0].TotalAttendance]})
-              //console.log(this.state.week[0].ModulePlan[0].weekplan);
-              console.log(this.state.week)
+           //console.log(resp)
+          resp.map(item=>{
+           // console.log(item)
+           //console.log(item.Title)
+           //console.log(item.Units.WeeklyPlan)
+            if(params == item.Title){
+              console.log(item.Units.WeeklyPlan)
+               this.setState({
+                              week: [item.Units.WeeklyPlan],
+                              cardData: item.Thumbnail,
+                              grades: [item.Units.Grades],
+                              last: [item.Units.LastWeekAttendance],
+                              total: [item.Units.TotalAttendance]
+                             });
+            //console.log(this.state.week[0].WeeklyPlan[0].weekplan);
+            //  console.l og()
             }
           }
+          )
       })
       .catch(err => {
           console.log('card call failed')
@@ -49,12 +56,17 @@ class Content extends React.Component{
     }
 
     render(){
-    
+    console.log(this.state.week)
     // sample input name for cards.    
+    var x = {...this.state.week}
     //const accordionList = [{ title: 'Week 1' }, { title: 'Week 2' }, { title: 'Third Accordion' },{ title: 'Second Accordion' },{ title: 'Second Accordion' },{ title: 'Second Accordion' }];
-    var accordionList= this.state.week;
-    //console.log(accordionList)
-
+    console.log(x)
+    var accordionList= {};
+    Object.entries(this.state.week).map((key)=> {
+        accordionList=key[1].weekplan
+    
+    }) 
+   console.log(accordionList.weekplan)
     return(
         <div className='homePage contentpage'>
             <div className='contentBtn'>
@@ -78,13 +90,16 @@ class Content extends React.Component{
                 <div className='rightContent'>
                        <div className="container">
                            <h1>Module Plan</h1>
-      
+                            
                           <dl className="accordion">
-                            {
-                              accordionList.map((item, index) => (
+                             {
+                               accordionList.length>0 && 
+                              accordionList.map((item, index) => {
+                               console.log(item.Title)
+                                return   (
                               <WeekCard key={item.id} weeknum={item.id} title={item.Title} onClick={this.toggle(index + 1)} expand={this.state[`block${index+1}`]} />
-                              ))
-                            }
+                              )})
+                            } 
                           </dl>
                         </div>;
                 </div>
