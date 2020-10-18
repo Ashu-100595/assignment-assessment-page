@@ -8,9 +8,21 @@
     box-shadow: 0 0 5px #0096ff;
     border-radius: 10px;
     text-decoration: none;
+    box-sizing: border-box;
+    transition: transform .7s;
 }
 
-.ModuleThumnail>img{
+.CardWrapper:hover{
+    transform: scale(1.1);
+}
+
+.CardContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ModuleThumbnail>img{
     width: 75px;
     margin-bottom: 20px;
 }

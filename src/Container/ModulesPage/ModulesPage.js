@@ -1,4 +1,5 @@
 import React from 'react';
+import axios from 'axios';
 
 import ModuleCard from '../../Components/ModuleCard/ModuleCard';
 import axios from 'axios';
@@ -7,23 +8,22 @@ import classes from './ModulesPage.module.css';
 class ModulesPage extends React.Component {
 
     state={
-        modCard:[]
+       classData : [],
     }
 
     componentDidMount(){
-        axios.get('https://5efbca1c80d8170016f76869.mockapi.io/shoplaneHome')
-        .then(async(response) =>{
-            this.setState({ modCard: [...response.data[0].details.Modules] });
-            console.log(this.state.modCard);
+        axios.get("https://5efbca1c80d8170016f76869.mockapi.io/shoplaneOrder")
+        .then(response =>{
+            this.setState({classData:[...response.data]});
+            console.log(this.state.classData)
         })
-        .catch(err => {
-            console.log('card call failed')
+        .catch(err=>{
+            console.log("API call failed")
         })
     }
-  
+    render(){
+        return (
 
-    render(){ 
-    return (
         <div className={classes.MainContainer}>
             <main className={classes.PageContainer}>
                 <section className={classes.ImageSection}>
@@ -82,16 +82,18 @@ class ModulesPage extends React.Component {
                 <section>
                     <div className={classes.ModuleCardWrapper}>
                         {
-                          this.state.modCard.map(item =>{
-                            return  <ModuleCard avatar={item.Avatar} duration={item.Duration} grades={item.Grades} propic={item.Instructor} thumbnail={item.Thumbnail} title={item.Title} />
-                          }) 
-                        }
+                            this.state.classData.map(item =>{
+                               return <ModuleCard key={item.id} thumbnail={item.Thumbnail} CardHeading={item.Title} ModuleFaculty={item.Instructor} avatar={item.Avatar} Duration={item.Duration} />
+                            })
+                        }                        
+
                     </div>
                 </section>
             </main>
         </div>
     )
   }
+}
 }
 
 export default ModulesPage;
