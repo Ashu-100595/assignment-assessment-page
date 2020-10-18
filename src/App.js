@@ -18,23 +18,23 @@ import './App.css';
 
 class App extends React.Component{
 
-  state = {
-      data: []
-  }
+//   state = {
+//       data: []
+//   }
 
- componentDidMount(){
-   axios.get('https://5f87684649ccbb00161774c5.mockapi.io/PracticeArena')
-   .then(response => {
+//  componentDidMount(){
+//    axios.get('https://5f87684649ccbb00161774c5.mockapi.io/PracticeArena')
+//    .then(response => {
      
-      this.setState({data:{...response.data}})
-      //console.log(this.state.data[0].Python.Topics[0].Date);
-      console.log(this.state.data);   
+//       this.setState({data:{...response.data}})
+//       //console.log(this.state.data[0].Python.Topics[0].Date);
+//       console.log(this.state.data);   
      
-   })
-   .catch(err =>{
-     console.log('Data fetching failed !!');
-   })
- }
+//    })
+//    .catch(err =>{
+//      console.log('Data fetching failed !!');
+//    })
+//  }
 
   render(){ 
   return(
@@ -47,7 +47,7 @@ class App extends React.Component{
         <Route path="/dashboard/:CourseName/:id" component={Problems} />
         <Route path="/classroom" component={Classroom} />
         <Route path="/modules" component={ModulesPage} />
-        <Route path="/weekly-curriculum" component={Content} />
+        <Route path="/weekly-curriculum/:Coursetitle" component={Content} />
         <Route component={NotFoundPage} />
         </Switch>
         <Footer />

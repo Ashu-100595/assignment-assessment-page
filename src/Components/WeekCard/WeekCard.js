@@ -3,12 +3,12 @@ import './WeekCard.css';
 
 class WeekCard extends React.Component {
     render() {
-      const { title, expand, onClick } = this.props;
+      var { title, expand, onClick, weeknum } = this.props;
       
       return (
         <div>
           <dt className={expand ? 'title is-expanded more' : 'title'} onClick={onClick}>
-            {title}
+             Week
           </dt>
           <dd className={expand ? 'content is-show' : 'content'} onClick={onClick}>
           
@@ -16,7 +16,7 @@ class WeekCard extends React.Component {
               <div className="flip-box">
                  <div className="flip-box-inner">
                      <div className="flip-box-front">
-                          <h2>Day - 1 | Intro To Cloud</h2>
+                          <h2>{title}</h2>
                      </div>
                      <div className="flip-box-back">
                           <h2>Session Plan</h2>

@@ -3,19 +3,19 @@ import {Link} from 'react-router-dom';
 
 import classes from './ModuleCard.module.css';
 
-const ModuleCard= () => {
+const ModuleCard= (props) => {
     return(
-        <Link className={classes.CardWrapper} to="/weekly-curriculum">         
+        <Link className={classes.CardWrapper} to={`/weekly-curriculum/${props.title}`}>         
         <div>
             <div className={classes.ModuleThumnail}>
-                <img src="https://assessments.edyoda.com/uploads/static/images/module_icon/aws_4QRD91l.png" alt="module thumbnail" />
+                <img src={props.thumbnail} alt="module thumbnail" />
             </div>
-            <div className={classes.CardHeading}>Intro to AWS</div>
+            <div className={classes.CardHeading}>{props.title}</div>
             <div className={classes.ModuleFaculty}>
-                <img src="https://assessments.edyoda.com/uploads/static/images/profile_images/rsz_harshith.png" alt="avatar" />
-                <div>Harshith</div>
+                <img src={props.avatar} alt="avatar" />
+                 <div>{props.propic}</div>
             </div>
-            <div>1 Weeks</div>
+            <div>{props.duration}</div>
         </div>
         </Link>
     )

@@ -1,10 +1,28 @@
 import React from 'react';
 
 import ModuleCard from '../../Components/ModuleCard/ModuleCard';
-
+import axios from 'axios';
 import classes from './ModulesPage.module.css';
 
-const ModulesPage = () => {
+class ModulesPage extends React.Component {
+
+    state={
+        modCard:[]
+    }
+
+    componentDidMount(){
+        axios.get('https://5efbca1c80d8170016f76869.mockapi.io/shoplaneHome')
+        .then(async(response) =>{
+            this.setState({ modCard: [...response.data[0].details.Modules] });
+            console.log(this.state.modCard);
+        })
+        .catch(err => {
+            console.log('card call failed')
+        })
+    }
+  
+
+    render(){ 
     return (
         <div className={classes.MainContainer}>
             <main className={classes.PageContainer}>
@@ -63,12 +81,17 @@ const ModulesPage = () => {
                 </section>
                 <section>
                     <div className={classes.ModuleCardWrapper}>
-                        <ModuleCard />
+                        {
+                          this.state.modCard.map(item =>{
+                            return  <ModuleCard avatar={item.Avatar} duration={item.Duration} grades={item.Grades} propic={item.Instructor} thumbnail={item.Thumbnail} title={item.Title} />
+                          }) 
+                        }
                     </div>
                 </section>
             </main>
         </div>
     )
+  }
 }
 
 export default ModulesPage;
