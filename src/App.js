@@ -20,23 +20,23 @@ import './App.css';
 
 class App extends React.Component{
 
-  state = {
-      data: []
-  }
+//   state = {
+//       data: []
+//   }
 
- componentDidMount(){
-   axios.get('https://5f87684649ccbb00161774c5.mockapi.io/PracticeArena')
-   .then(response => {
+//  componentDidMount(){
+//    axios.get('https://5f87684649ccbb00161774c5.mockapi.io/PracticeArena')
+//    .then(response => {
      
-      this.setState({data:{...response.data}})
-      //console.log(this.state.data[0].Python.Topics[0].Date);
-      console.log(this.state.data);   
+//       this.setState({data:{...response.data}})
+//       //console.log(this.state.data[0].Python.Topics[0].Date);
+//       console.log(this.state.data);   
      
-   })
-   .catch(err =>{
-     console.log('Data fetching failed !!');
-   })
- }
+//    })
+//    .catch(err =>{
+//      console.log('Data fetching failed !!');
+//    })
+//  }
 
   render(){ 
   return(
