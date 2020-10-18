@@ -37,9 +37,10 @@
     background: #FFFFFF;
     border-radius: 10px;
     box-shadow: 0px 5px 9px gray;
-    margin: 3.5rem 0 1.5rem 0;
+    margin: 4.5rem 0 1.5rem 0;
     padding: 25px;
     box-sizing: border-box;
+    font-family: 'Monda', sans-serif;
 }
 .leftUpper>p{
     font-size: 15px;
@@ -72,6 +73,7 @@
 .container>h1{
     text-align: center;
     margin-top: 0px;
+    font-family: 'Monda', sans-serif;
 }  
 .accordion {
     box-shadow: 7px 7px 12px gray;
