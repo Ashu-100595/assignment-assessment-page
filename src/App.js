@@ -9,6 +9,8 @@ import Homepage from './Container/HomePage/Homepage';
 import TopicDetail from './Container/TopicDetail/TopicDetail';
 import Problems from './Components/Problems/problems';
 import Content from './Container/Contentpage/contentpage';
+import SessionPlan from './Components/Session Plan/sessionPlan'
+import SessionRecording from './Components/Session Recording/sessionRecording'
 import Footer from './Components/Footer/footer';
 
 import './App.css';
@@ -42,7 +44,7 @@ class App extends React.Component{
         <Switch>
         <Route exact path="/" component={Homepage} />
         <Route exact path="/dashboard/:CourseName" component={TopicDetail} />
-        <Route path="/dashboard/python/1" component={Problems} />
+        <Route path="/dashboard/:CourseName/:id" component={Problems} />
         <Route path="/classroom" component={Classroom} />
         <Route path="/modules" component={ModulesPage} />
         <Route path="/weekly-curriculum" component={Content} />

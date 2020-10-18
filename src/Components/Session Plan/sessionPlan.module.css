@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Monda&display=swap');
+
+body{
+    background-color: #F2F6FF;    
+}
+
+.sessionWrapper{
+    width:60%;
+    margin: 100px auto;
+    background-color: white;
+    box-shadow: 0px 5px 9px gray;
+    padding: 20px;
+    text-align: center;
+    font-family: 'Monda', sans-serif;
+}
+
+.sessHeadding{
+    font-weight: 400;
+    padding-bottom: 20px;
+    border-bottom: 2px solid black;
+}
+
+
+.topicHeading{
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.topicWrapper{
+    margin: 30px auto;
+    padding-bottom: 30px;
+}
+
+.linkHeading{
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.linkWrapper{
+    margin: 30px auto;
+    padding-bottom: 30px;
+}
+
+.passWrapper{
+    margin: 30px auto;
+}
+
+.passHeading{
+    font-size: 20px;
+    font-weight: 700;
+}
