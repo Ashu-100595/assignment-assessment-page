@@ -1,5 +1,5 @@
 import React from 'react';
-import classes from '../Session Plan/sessionPlan.module.css';
+import classes from './sessionPlan.module.css';
 
 const SessionPlan= () => {
   return(

@@ -9,6 +9,11 @@
     border-radius: 10px;
     text-decoration: none;
     box-sizing: border-box;
+    transition: transform .7s;
+}
+
+.CardWrapper:hover{
+    transform: scale(1.1);
 }
 
 .CardContainer{

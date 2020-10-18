@@ -1,4 +1,6 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
+
 import WeekCard from '../../Components/WeekCard/WeekCard';
 import './content.css';
 
@@ -26,7 +28,9 @@ class Content extends React.Component{
         <div className='homePage contentpage'>
             <div className='contentBtn'>
                 <button type='button'>Units</button>
-                <button type='button'>Grades</button>
+                <Link to={`/modules/RB-020420/grades/`}>
+                  <button type='button'>Grades</button>
+                </Link>
             </div>
             <div className='combModule'>
                 <div className='leftContent'>

@@ -4,6 +4,8 @@ import axios from 'axios';
 import Navbar from './Components/Navbar/Navbar';
 import Classroom from './Container/Classroom/Classroom';
 import ModulesPage from './Container/ModulesPage/ModulesPage';
+import Dsa from './Components/Dsa/Dsa';
+import Grades from './Components/Grades/Grades';
 import NotFoundPage from './Container/NotFoundPage/NotFoundPage';
 import Homepage from './Container/HomePage/Homepage';
 import TopicDetail from './Container/TopicDetail/TopicDetail';
@@ -46,7 +48,9 @@ class App extends React.Component{
         <Route exact path="/dashboard/:CourseName" component={TopicDetail} />
         <Route path="/dashboard/:CourseName/:id" component={Problems} />
         <Route path="/classroom" component={Classroom} />
-        <Route path="/modules" component={ModulesPage} />
+        <Route exact path="/modules/RB-020420" component={ModulesPage} />
+        <Route exact path="/modules/RB-020420/grades" component={Grades} />
+        <Route path="/modules/DSA-130720" component={Dsa} />
         <Route path="/weekly-curriculum" component={Content} />
         <Route component={NotFoundPage} />
         </Switch>
