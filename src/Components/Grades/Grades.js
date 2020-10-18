@@ -15,8 +15,8 @@ class Grades extends React.Component {
 
         axios.get("https://5f8c0fd0c7aadb001605dfac.mockapi.io/myApi")
         .then(async(response) =>{
-            this.setState({assignmentData:[...response.data]});
-            console.log(this.state.assignmentData[2].Assignments)
+            this.setState({assignmentData:[...response.data[2].Assignments]});
+            console.log(this.state.assignmentData)
 
         })
         .catch(err=>{
@@ -30,10 +30,10 @@ class Grades extends React.Component {
                 <main className={classes.PageContainer}>
                     <section className={classes.DetailsSection}>
                         <div className={classes.ImageSection}>
-                            <img src="https://assessments.edyoda.com/uploads/static/images/DSA130720/MicrosoftTeams-image_1.png" alt="Thumbnail" />
+                            <img src="https://assessments.edyoda.com/uploads/static/images/logo.png" alt="Thumbnail" />
                         </div>
                         <div className={classes.ScoreSection}>
-                            <div className={classes.CourseName}>DSA-130720 - Data Structures and Algorithms</div>
+                            <div className={classes.CourseName}>CSS | Javascript</div>
                             <div className={classes.Scores}>
                             <div className={classes.Rank}>
                                 <div>18</div>
@@ -42,20 +42,17 @@ class Grades extends React.Component {
                             <div className={classes.Rank}>
                                 <div>0.0%</div>
                                 <div>Avg Score</div>
-                            </div>
-                            <div className={classes.Rank}>
-                                <div>50</div>
-                                <div>SHS</div>
-                            </div>
+                            </div>                            
                         </div>
                         </div>
                     </section>
                     <section className={classes.AssignmentsSection}>
                         {
-                            <Assignments />
-                            // this.state.assignmentData.map(item=>{
-                            //     return <Assignments key={item.id} id={item.id} title={item.Title} score={item.Score} />
-                            // })
+                            // <Assignments />
+                            this.state.assignmentData.map(item=>{
+                                console.log(item)
+                                return <Assignments key={item.id} id={item.id} title={item.Title} score={item.Score} />
+                            })
                         }
                     </section>
                 </main>
