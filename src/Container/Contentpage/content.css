@@ -179,6 +179,25 @@
     cursor: pointer;
 }
       
-    
-  
+
+@media(max-width:600px){
+    .contentpage{
+        width: unset;
+        padding: 0px;
+    }
+    .combModule{
+        display: block;
+    }
+    .leftContent{
+        width: unset;
+        padding: 20px;
+    }
+    .leftUpper{
+        margin: 0 0 2.5rem 0;
+    }
+    .rightContent{
+        padding: 20px;
+        width: unset;
+    }
+}
   

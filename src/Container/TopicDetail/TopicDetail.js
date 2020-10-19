@@ -53,7 +53,7 @@ class TopicDetail extends React.Component {
                     <p>Avg. Score</p>
                 </div>
             </div>
-            <div>
+            <div className='table'>
             <table className='ProTable highlight'>
                  <thead>
                      <tr>

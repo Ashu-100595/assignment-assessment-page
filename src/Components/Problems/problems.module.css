@@ -90,3 +90,25 @@
       color: white;
       cursor: pointer;
   }
+
+  @media(max-width:600px){
+      .proOut{
+          padding: 12px;
+      }
+      .longCard{
+          width:unset;
+      }
+      .probsWrapper{
+          height:unset;
+      }
+      .Desc{
+          padding-left: 8px;
+          padding-right: 7px;
+      }
+      .subbtnWrapper{
+          margin-right: 10px;
+      }
+      .Heading{
+          margin-bottom: 30px;
+      }
+  }

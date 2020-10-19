@@ -12,7 +12,6 @@ const Navbar = () => {
                     <div className={classes.NavSection}>
                         <Link to="/" className={classes.MenuItems}>Practice Arena</Link>
                         <Link to="/classroom" className={classes.MenuItems}>Classroom</Link>
-                        <Link to="/jobs" className={classes.MenuItems}>View Jobs</Link>
                     </div>
                 </div>
                 <div className={classes.AccountSection}>
@@ -21,6 +20,9 @@ const Navbar = () => {
                         <div className={classes.CountWrapper}><span className={classes.NotificationCount}>0</span></div>
                     </div>
                     <div className={classes.MenuItems}><span>Group B<i className={["fas", "fa-caret-down" , classes.Dropdown].join(' ')}></i></span></div>
+                </div>
+                <div className={classes.hamburger}>
+                   <i className="fas fa-bars"></i>
                 </div>
         </div>
         </header>

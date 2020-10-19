@@ -46,3 +46,16 @@
     color: rgba(0,0,0,0.6);
     margin-bottom: 0px;
   }
+
+  @media(max-width:600px){
+    .cardSection{
+      padding: 10px 10px;
+      width: unset;
+      height: unset;
+      margin: 0px 10px;
+    }
+    .courseCard{
+      width: unset;
+      margin: 0px;
+    }
+  }

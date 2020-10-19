@@ -26,3 +26,14 @@
 .sectionWrapper{
     text-align: left;
 }
+
+@media(max-width:600px){
+    .footerWrapper{
+        display: block;
+        padding: 20px 0px;
+    }
+    .sectionWrapper{
+        text-align: center;
+        margin-bottom: 3rem;
+    }
+}
