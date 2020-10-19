@@ -31,6 +31,8 @@
     z-index: 0;
 }
 
+
+
 .CourseInfo{
     position: absolute;
     z-index: 2;
@@ -125,4 +127,24 @@
     flex-wrap: wrap;
     padding: 28px 60px;
 
+}
+
+@media(max-width:600px){
+    .PageContainer{
+        width: 90%;
+    }
+    .MainContainer{
+        margin-top: 200px;
+    }
+    .Progress{
+        margin: 8rem 0 2rem 3rem;
+    }
+    .ModulesSection{
+        text-align: center;
+        margin-top: 10px;
+        padding: 0px;
+    }
+    .ModuleCardWrapper{
+        display: block;
+    }
 }

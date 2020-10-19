@@ -31,6 +31,12 @@
     
 }
 
+@media(max-width:600px){
+    .CourseCard{
+        margin-bottom: 30px;
+    }
+}
+
 .CourseUnits{
     font-size: 14px;
     font-weight: 500;

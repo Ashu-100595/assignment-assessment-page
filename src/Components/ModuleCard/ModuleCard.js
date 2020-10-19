@@ -15,7 +15,7 @@ const ModuleCard= (props) => {
                 <img src={props.avatar} alt="avatar" />
                 <div>{props.ModuleFaculty}</div>
             </div>
-            <div>{props.Duration}</div>
+            <div className={classes.modDuration}>{props.duration}</div>
         </div>
         </Link>
     )

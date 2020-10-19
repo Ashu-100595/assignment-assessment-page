@@ -42,7 +42,7 @@ render()
     console.log(this.state.probData)
     return   <section className={classes.probPage}>
                     <h2 className={classes.Heading}>Problems</h2>
-                    <div>
+                    <div className={classes.proOut}> 
                   
                           
                               {

@@ -80,3 +80,34 @@
 .Username:hover{
     color: teal;
 }
+.hamburger{
+    display:none;
+}
+
+@media(max-width:600px){
+    .NavSection{
+        display:flex;
+        text-align: center;
+    }
+    .Logo{
+        width: 135px;
+    }
+    .MenuItems{
+        margin: 0px;
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .AccountSection{
+        display: none;
+    }
+    .NavbarWrapper{
+        margin: 0px;
+    }
+    .hamburger{
+        display: blck;
+        font-size: 27px;
+    }
+    
+}

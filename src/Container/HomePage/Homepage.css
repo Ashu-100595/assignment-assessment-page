@@ -26,3 +26,16 @@
   .courseWrapper>a{
     text-decoration: none;
   }
+
+@media(max-width:600px){
+  .homePage{
+    width: unset;
+    }
+  .homeHeading{
+    font-size: 35px;
+  }
+  .courseWrapper{
+    display: block;
+  }
+ 
+}  

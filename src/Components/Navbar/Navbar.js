@@ -21,6 +21,9 @@ const Navbar = () => {
                     </div>
                     <div className={classes.MenuItems}><span>Group B<i className={["fas", "fa-caret-down" , classes.Dropdown].join(' ')}></i></span></div>
                 </div>
+                <div className={classes.hamburger}>
+                   <i className="fas fa-bars"></i>
+                </div>
         </div>
         </header>
     )

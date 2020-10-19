@@ -35,3 +35,10 @@ body{
     margin: 1%;
     text-decoration: none;
 }
+
+@media(max-width:600px){
+    .MainContainer{
+        width: 80%;
+    }
+    
+}

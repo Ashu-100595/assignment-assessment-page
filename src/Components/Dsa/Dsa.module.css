@@ -70,3 +70,33 @@
     width: 90%;
     margin: 20px auto 0px auto;
 }
+
+@media(max-width:600px){
+    .DetailsSection{
+        height: unset;
+        display: block;
+    }
+    .ImageSection{
+        width: 100%;
+        text-align: center;
+    }
+    .ImageSection>img{
+        width: 290px;
+    }
+    .ScoreSection{
+        width: unset;
+        margin-top: 20px;
+    }
+    .CourseName{
+        font-size: 20px;
+    }
+    .Scores{
+        padding: 0px;
+        justify-content: center;
+        margin-top: 14px;
+        font-size: 15px;
+    }
+    .MainContainer{
+        padding: 15px;
+    }
+}
