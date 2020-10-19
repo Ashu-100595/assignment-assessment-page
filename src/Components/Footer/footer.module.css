@@ -9,7 +9,6 @@
 .sectionWrapper{
     color: #ffffff;
     font-size: 14px;
-    cursor: pointer;
 }
 
 .footerWrapper{
@@ -26,18 +25,6 @@
 .sectionWrapper{
     text-align: left;
 }
-
-<<<<<<< HEAD
-@media(max-width:600px){
-    .footerWrapper{
-        display: block;
-        padding: 20px 0px;
-    }
-    .sectionWrapper{
-        text-align: center;
-        margin-bottom: 3rem;
-    }
-=======
 .sectionWrapper img, .sectionWrapper span{
     margin:5px;
     vertical-align: middle;
@@ -52,5 +39,24 @@
     width: 15px;
     height: 20px;
     margin: 10px;
->>>>>>> 51877472a6e61d6a63ae215b6bd5375acb75dce1
+    cursor: pointer;
+}
+
+@media(max-width:600px){
+    .footerWrapper{
+        display: block;
+        padding: 20px 0px;
+    }
+    .sectionWrapper{
+        text-align: center;
+        margin-bottom: 3rem;
+        cursor: unset;
+    }
+    .SocialMedia{
+        display: block;
+        margin: 15px 0px;
+    }
+    .SocialMedia>img{
+        cursor: pointer;
+    }
 }

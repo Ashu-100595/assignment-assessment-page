@@ -24,3 +24,9 @@
 .Error{
     color:#cc0000;
 }
+
+@media(max-width:600px){
+    .Assignments{
+        font-size: 15px;
+    }
+}
