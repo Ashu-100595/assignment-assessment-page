@@ -8,7 +8,7 @@
     justify-content: space-evenly;
     border-bottom: 2px solid #dee2e6;
 }
-.contentBtn>button{
+.contentBtn button{
     border: 3px solid transparent;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
@@ -19,7 +19,7 @@
     outline: none;
     background-color: #dee2e6;
 }
-.contentBtn>button:hover{
+.contentBtn button:hover{
     color: black;
     background-color: #5cdb95;
 }

@@ -4,7 +4,7 @@ import classes from './CourseCard.module.css';
 
 const CourseCard = (props) => {
     return (
-        <Link to="/modules">
+        <Link to={`/modules/${props.link}`}>
         <div className={classes.CourseCard}>
             <div className={classes.Thumbnail}>
                 <img src={props.ThumbnailUrl} alt="Course Thumbnail"/>

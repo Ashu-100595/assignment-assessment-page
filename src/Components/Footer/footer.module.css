@@ -6,7 +6,7 @@
     font-weight: 700; 
 }
 
-.sectionWrapper>p{
+.sectionWrapper{
     color: #ffffff;
     font-size: 14px;
     cursor: pointer;
@@ -27,6 +27,7 @@
     text-align: left;
 }
 
+<<<<<<< HEAD
 @media(max-width:600px){
     .footerWrapper{
         display: block;
@@ -36,4 +37,20 @@
         text-align: center;
         margin-bottom: 3rem;
     }
+=======
+.sectionWrapper img, .sectionWrapper span{
+    margin:5px;
+    vertical-align: middle;
+}
+
+.SocialMedia{
+    display: flex;
+    margin-top: 10px;
+}
+
+.SocialMedia img{
+    width: 15px;
+    height: 20px;
+    margin: 10px;
+>>>>>>> 51877472a6e61d6a63ae215b6bd5375acb75dce1
 }

@@ -1,0 +1,72 @@
+.MainContainer{
+    margin-top: 115px;
+    box-sizing: border-box;
+}
+
+.PageContainer{
+    max-width:900px;
+    box-shadow: 0 0 25px #ccc;
+    display: flex;
+    flex-direction: column;
+    background: #FFFFFF;
+    margin: 30px auto;
+    border-radius: 10px;
+}
+
+.DetailsSection{
+    width: 90%;
+    height: 300px;
+    margin:5% auto 0 auto;
+    display: flex;
+}
+
+.ImageSection{
+    width: 30%;
+
+}
+
+.ImageSection>img{
+    width: 200px;
+}
+
+.ScoreSection{
+    width: 70%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.CourseName{
+    color: #0096ff;
+    margin: 0;
+    font-size: 24px;
+    font-weight: 700;
+    cursor: pointer;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1;
+    letter-spacing: .4px;
+    text-align: left;
+    font-family: Raleway,sans-serif;
+}
+
+.Scores{
+    display: flex;
+    padding: 5%;
+}
+
+.Rank{
+    margin-right: 30px;
+    font-weight: 600;
+}
+
+.Rank>div:nth-child(1){
+    margin:5px;
+    opacity: 0.7;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.AssignmentsSection{
+    width: 90%;
+    margin: 20px auto 0px auto;
+}
